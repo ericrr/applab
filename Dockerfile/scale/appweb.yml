@@ -1,0 +1,13 @@
+
+version: '2'
+
+services:
+  appweb:
+    image: appweb:1.0
+    restart: always
+    container_name: appweb
+    ports:
+      - 8081:80
+    volumes:
+      - /opt/html/:/var/www/html
+    hostname: appweb

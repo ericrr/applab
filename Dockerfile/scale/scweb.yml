@@ -1,0 +1,11 @@
+
+version: '2'
+
+services:
+  appweb:
+    image: appweb:1.0
+    ports:
+      - 8010-8020:80
+    volumes:
+      - /opt/html/:/var/www/html
+    hostname: appweb
