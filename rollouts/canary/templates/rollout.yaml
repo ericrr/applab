@@ -20,15 +20,15 @@ spec:
       maxUnavailable: 0
       steps:
       - setWeight: 10
-      - pause: {}
+      - pause: {duration: 120}
       - setWeight: 20
-      - pause: {duration: 2} # pause indefinitely
+      - pause: {duration: 120} # pause indefinitely
       - setWeight: 40
-      - pause: {duration: 2} # pause indefinitely      
+      - pause: {duration: 120} # pause indefinitely      
       - setWeight: 60
-      - pause: {duration: 2} # pause indefinitely      
+      - pause: {duration: 120} # pause indefinitely      
       - setWeight: 80
-      - pause: {duration: 2} # pause indefinitely      
+      - pause: {duration: 120} # pause indefinitely      
       - setWeight: 90
       - pause: {} # pause indefinitely      
     blueGreen:
